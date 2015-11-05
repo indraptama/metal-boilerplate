@@ -1,0 +1,9 @@
+extends partial/default.jade
+block content
+  main
+    .Container.Container--small
+      ul
+        each post in publish
+          li
+            a.u-linkClean(href!='/'+post.path)
+              h2!= post.title

@@ -1,0 +1,61 @@
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  line-height: 1;
+  margin-top: 0;
+  text-rendering: optimizeLegibility;
+  color: #222222;
+}
+
+
+.giga {
+  font-size: var(--giga);
+  margin-bottom: calc(var(--type-ratio)/var(--giga))
+}
+
+.mega {
+  font-size: var(--mega);
+  margin-bottom: calc(var(--type-ratio)/var(--mega))
+}
+
+h1,
+.kilo {
+  font-size: var(--h1);
+  margin-bottom: calc(var(--type-ratio)/var(--h1))
+}
+
+h2,
+.alpha {
+  font-size: var(--h2);
+  margin-bottom: calc(var(--type-ratio)/var(--h2))
+}
+
+h3,
+.beta {
+  font-size: var(--h3);
+  margin-bottom: calc(var(--type-ratio)/var(--h3))
+}
+
+h4,
+.gamma {
+  font-size: var(--h4);
+  margin-bottom: calc(var(--type-ratio)/var(--h4))
+}
+
+h5,
+.delta {
+  font-size: var(--h5);
+  margin-bottom: calc(var(--type-ratio)/var(--h5))
+}
+
+h6,
+.epsilon {
+  font-size: var(--h6);
+  margin-bottom: calc(var(--type-ratio)/var(--h6))
+}

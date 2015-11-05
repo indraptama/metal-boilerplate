@@ -1,0 +1,7 @@
+/* Set Box Sizing to border-box on every elements*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

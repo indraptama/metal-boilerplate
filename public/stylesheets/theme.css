@@ -1,0 +1,33 @@
+.test {
+  font-size: var(--type-ratio);
+}
+
+.subTitle {
+  border-bottom: 1px solid #ccc;
+  padding-top: var(--base-spacing-unit);
+  padding-bottom: calc(var(--base-spacing-unit)/2);
+  margin-bottom: calc(var(--base-spacing-unit)/2);
+  color: #888;
+}
+
+.u-fontBold {
+  font-weight: 800;
+}
+
+
+/* Themes */
+
+.Hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.u-textHero {
+  font-size: responsive 2.618rem 5.997rem;
+  color: rgba(0,0,0,.87);
+  font-family: 'playfair display';
+  letter-spacing: -0.015em;
+}

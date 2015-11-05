@@ -1,0 +1,39 @@
+:root {
+  --default-container: 60rem;
+  --small-container:  40rem;
+  --medium-container: 60rem;
+  --large-container: 80rem;
+  --xlarge-container: 90rem;
+}
+
+.Container {
+  width: calc(100% - 3rem);
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Container Modifer */
+
+.Container--full {
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  margin-left: auto;
+}
+
+.Container--small {
+  max-width: var(--small-container);
+}
+
+.Container--medium {
+  max-width: var(--medium-container);
+}
+
+.Container--large {
+  max-width: var(--large-container);
+}
+
+.Container--xLarge {
+  max-width: var(--xlarge-container);
+}

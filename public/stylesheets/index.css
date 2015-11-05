@@ -1,0 +1,95 @@
+
+
+/* base */
+@import "./css/base-boxsizing.css";
+@import "suitcss-base";
+@import "./css/h5bp1.css";
+@import "./css/base-page.css";
+@import "./css/base-shared.css";
+@import "./css/base-heading.css";
+@import "./css/base-paragraph.css";
+@import "./css/base-code.css";
+@import "./css/base-list.css";
+/*
+page
+headings
+paragraph
+link
+*/
+
+/* Components */
+@import "./css/components-container.css";
+@import "suitcss-components-arrange";
+@import "suitcss-components-button";
+@import "suitcss-components-flex-embed";
+@import "suitcss-components-grid";
+@import "./css/components-media-object.css";
+
+
+/* Utilities */
+@import "./css/utils-column.css";
+@import "suitcss-utils-align";
+@import "suitcss-utils-display";
+@import "suitcss-utils-layout";
+@import "suitcss-utils-link";
+@import "suitcss-utils-offset";
+@import "suitcss-utils-position";
+@import "suitcss-utils-size";
+@import "suitcss-utils-text";
+
+
+/* Themes */
+@import "theme.css";
+
+
+
+
+
+/* Variables */
+
+:root {
+  --ms-bases: 1, 1;
+  --ms-ratios: 1.618;
+
+  /* spacing */
+
+  --base-font-family:'lato';
+  --heading-font-family:'playfair display';
+  --secondary-font-family:'';
+
+  --base-font-size: 1rem;
+  --base-line-height: 1.618;
+  --base-spacing-unit: calc(var(--base-line-height)*1rem);
+
+  --type-ratio: calc(var(--base-font-size)*var(--base-spacing-unit));
+
+  /* Heading Size */
+  --giga: 5.997rem;
+  --mega: 4.236rem;
+  --kilo: 3.706rem;
+  --h1: 2.618rem;
+  --h2: 2.291rem;
+  --h3: 1.618rem;
+  --h4: 1.416rem;
+  --h5: 1rem;
+  --h6: 0.875rem;
+  --small: 0.618rem;
+  --mini: 0.541rem;
+  --micro:0.382rem;
+
+  /* Container Size */
+  --default-container: 60rem;
+  --small-container:  40rem;
+  --medium-container: 60rem;
+  --large-container: 80rem;
+  --xlarge-container: 90rem;
+
+  /* Grid */
+  --Grid-font-size: var(--base-font-size);
+  --Grid-gutter-size: var(--base-spacing-unit);
+}
+
+@custom-media --sm-viewport (min-width:320px) and (max-width:640px);
+@custom-media --md-viewport (min-width:640px) and (max-width:960px);
+@custom-media --lg-viewport (min-width:960px);
+@custom-media --xl-viewport (min-width:1280px);

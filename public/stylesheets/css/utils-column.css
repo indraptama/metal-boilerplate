@@ -1,0 +1,65 @@
+/* CSS Column */
+
+/**
+
+markup:
+<div class = u-column u-column1>
+  <div>foo</div>
+</div>
+
+*/
+
+:root {
+  --base-spacing-unit: 1.5rem;
+}
+
+@custom-media --xl-viewport (min-width:1280px);
+
+.u-column {
+  columns: 1;
+  column-gap: var(--base-spacing-unit);
+}
+
+.u-column1{columns: 1}
+.u-column2{columns: 2}
+.u-column3{columns: 3}
+.u-column4{columns: 4}
+.u-column5{columns: 5}
+.u-column6{columns: 6}
+
+/* Small viewport columns */
+@media (--sm-viewport) {
+  .u-sm-column1{columns: 1}
+  .u-sm-column2{columns: 2}
+  .u-sm-column3{columns: 3}
+  .u-sm-column4{columns: 4}
+  .u-sm-column5{columns: 5}
+  .u-sm-column6{columns: 6}
+}
+
+@media (--md-viewport) {
+  .u-md-column1{columns: 1}
+  .u-md-column2{columns: 2}
+  .u-md-column3{columns: 3}
+  .u-md-column4{columns: 4}
+  .u-md-column5{columns: 5}
+  .u-md-column6{columns: 6}
+}
+
+@media (--lg-viewport) {
+  .u-lg-column1{columns: 1}
+  .u-lg-column2{columns: 2}
+  .u-lg-column3{columns: 3}
+  .u-lg-column4{columns: 4}
+  .u-lg-column5{columns: 5}
+  .u-lg-column6{columns: 6}
+}
+
+@media (--xl-viewport) {
+  .u-xl-column1{columns: 1}
+  .u-xl-column2{columns: 2}
+  .u-xl-column3{columns: 3}
+  .u-xl-column4{columns: 4}
+  .u-xl-column5{columns: 5}
+  .u-xl-column6{columns: 6}
+}

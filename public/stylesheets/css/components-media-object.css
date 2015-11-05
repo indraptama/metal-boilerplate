@@ -1,0 +1,80 @@
+:root {
+  --base-spacing-unit: 1.5rem;
+}
+
+/**
+CSS Media Object
+
+Markup:
+<div class="Media">
+  <div class="Media-figure">
+    <img="./img/media-image.png">
+  </div>
+  <div class="Media-body">
+    <p>this is the content of media</p>
+  </div>
+</div>
+
+*/
+
+
+.Media {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--base-spacing-unit);
+}
+
+.Media-figure {
+  margin-right: var(--base-spacing-unit);
+}
+
+.Media-body {
+  flex: 1;
+}
+.Media-body,
+.Media-body :last-child {
+  margin-bottom: 0;
+}
+
+
+/* Media Modifer */
+.Media--center {
+  align-items: center;
+}
+
+.Media--reverse > .Media-figure {
+  order: 1;
+  margin: 0 0 0 var(--base-spacing-unit);
+}
+
+@media (--lg-viewport){
+  .Media--lg-toBlock {
+    flex-direction: column;
+  }
+
+  .Media--lg-toBlock > .Media-body,
+  .Media--lg-toBlock > .Media-figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .Media--lg-toBlock > .Media-figure {
+    margin-bottom: var(--base-spacing-unit);
+  }
+}
+
+@media (--sm-viewport){
+  .Media--sm-toMedia {
+    flex-direction: column;
+  }
+
+  .Media--sm-toMedia > .Media-body,
+  .Media--sm-toMedia > .Media-figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .Media--sm-toMedia > .Media-figure {
+    margin-bottom: var(--base-spacing-unit);
+  }
+}

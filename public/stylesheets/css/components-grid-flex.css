@@ -1,0 +1,58 @@
+:root {
+  --base-spacing-unit: 1.5rem;
+}
+
+.GridFlex {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.GridFlex-cell {
+  width: 100%;
+}
+
+.GridFlex--flexCells > .GridFlex-cell {
+  display: flex;
+}
+
+.GridFlex--top {
+  align-items: flex-start;
+}
+
+.GridFlex--bottom {
+  align-items: flex-end;
+}
+
+.GridFlex--center {
+  align-items: center;
+}
+
+.GridFlex--justifyCenter {
+  justify-content: center;
+}
+
+.GridFlex-cell--top {
+  align-self: flex-start;
+}
+
+.GridFlex-cell--bottom {
+  align-self: flex-end;
+}
+
+.GridFlex-cell--center {
+  align-self: center;
+}
+
+.GridFlex-cell--autoSize {
+  flex: none;
+}
+
+.GridFlex--withGutter {
+  margin: calc(var(--base-spacing-unit)*-1) 0 var(--base-spacing-unit) calc(var(--base-spacing-unit)*-1);
+}
+.GridFlex--withGutter > .GridFlex-cell {
+  padding: var(--base-spacing-unit) 0 0 var(--base-spacing-unit);
+}

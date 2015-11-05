@@ -1,0 +1,19 @@
+/* Base Pages */
+html {
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  background-color: #fff;
+  color: #444;
+  overflow-y: scroll;
+  min-width: 100%;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+}
+
+body {
+  hyphens: auto;
+  word-wrap: break-word;
+  color: #444444;
+}

@@ -1,0 +1,23 @@
+/* Set default Margin for some elements */
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre {
+    margin-bottom: var(--base-spacing-unit);
+}
+
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  hyphens: none;
+}
