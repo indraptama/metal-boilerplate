@@ -1,6 +1,6 @@
 ---
-title: About Indra Pratama
+title: About Me
 layout: index.jade
 permalink: false
 ---
-# this is about
+Hallo my name is Indra Pratama Putra,
